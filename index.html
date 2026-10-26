@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rabbit Creek Community Church &mdash; Child Sponsorship Directory</title>
+<meta name="description" content="Directory of children available for and currently receiving sponsorship through Rabbit Creek Community Church.">
+<style>
+  :root {
+    --ink:#20241f; --paper:#faf7f0; --accent:#6b7f4a; --accent-dark:#45502f;
+    --card-bg:#ffffff; --muted:#6b6a63; --border:#e4ddcd;
+    --font-display: Georgia, 'Times New Roman', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--font-body); }
+  header { padding:2.5rem 1.5rem 1.5rem; text-align:center; border-bottom:1px solid var(--border); background:#fff; }
+  header h1 { font-family:var(--font-display); font-size:2rem; margin:0 0 .4rem; color:var(--accent-dark); }
+  header p { margin:.2rem 0; color:var(--muted); max-width:640px; margin-left:auto; margin-right:auto; }
+  nav.tabs { display:flex; justify-content:center; gap:.75rem; margin:1.25rem 0 0; }
+  nav.tabs button { font:inherit; font-weight:600; padding:.55rem 1.1rem; border-radius:999px; border:1px solid var(--border); background:#fff; cursor:pointer; color:var(--ink); }
+  nav.tabs button.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .search-row { display:flex; justify-content:center; margin:1.25rem 0 0; }
+  .search-row input { width:min(420px,90%); padding:.6rem .9rem; border-radius:8px; border:1px solid var(--border); font:inherit; }
+  main { max-width:1180px; margin:0 auto; padding:2rem 1.25rem 4rem; }
+  section.group { display:none; }
+  section.group.active { display:block; }
+  section.group h2 { font-family:var(--font-display); color:var(--accent-dark); border-bottom:2px solid var(--border); padding-bottom:.4rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1.25rem; margin-top:1.25rem; }
+  .card { background:var(--card-bg); border:1px solid var(--border); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; }
+  .card img { width:100%; aspect-ratio:3/4; object-fit:cover; display:block; background:#eee; }
+  .card-body { padding:.85rem 1rem 1.1rem; display:flex; flex-direction:column; gap:.35rem; }
+  .card h3 { margin:0; font-family:var(--font-display); font-size:1.15rem; }
+  .card .meta { margin:0; font-size:.82rem; color:var(--muted); }
+  .card .bio { margin:.2rem 0 0; font-size:.9rem; line-height:1.4; flex:1; }
+  .card .cost { margin:.2rem 0 0; font-size:.85rem; font-weight:600; color:var(--accent-dark); }
+  .link-row { margin:.3rem 0 0; }
+  .img-url { font-size:.78rem; color:var(--accent-dark); }
+  footer { text-align:center; padding:2rem 1rem 3rem; color:var(--muted); font-size:.85rem; }
+  code.api { background:#efece0; padding:.1rem .4rem; border-radius:4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Rabbit Creek Community Church &mdash; Child Sponsorship Directory</h1>
+  <p>A complete reference of children currently needing sponsorship and children already sponsored, with photos and bios, for use by the sponsorship application.</p>
+  <nav class="tabs">
+    <button class="active" data-target="needs">Needs Sponsorship (36)</button>
+    <button data-target="sponsored">Already Sponsored (5)</button>
+  </nav>
+  <div class="search-row"><input id="search" type="search" placeholder="Search by name..."></div>
+</header>
+<main>
+  <section class="group active" id="needs">
+    <h2>Children Needing Sponsorship</h2>
+    <div class="grid">
+      <article class="card" data-name="alex etaba">
+        <a class="photo-link" href="images/needs-alex-etaba.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-alex-etaba.jpg" alt="Photo of Alex Etaba" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Alex Etaba</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: February 22nd, 2019 &middot; Ambition: Engineer</p>
+          <p class="bio">Alex is a student at Russell Academy. He wants to be an engineer when he is older.</p>
+          <p class="cost">Sponsoring Alex costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-alex-etaba.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="alexas margaret">
+        <a class="photo-link" href="images/needs-alexas-margaret.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-alexas-margaret.jpg" alt="Photo of Alexas Margaret" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Alexas Margaret</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: October 7th, 2020 &middot; Ambition: Teacher</p>
+          <p class="bio">Alexas is a first grader at Russell Academy. She wants to be a teacher when she is older.</p>
+          <p class="cost">Sponsoring Alexas costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-alexas-margaret.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="angel njeri ndung’u">
+        <a class="photo-link" href="images/needs-angel-njeri.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-angel-njeri.jpg" alt="Photo of Angel Njeri Ndung’u" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Angel Njeri Ndung’u</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: October 27th, 2018 &middot; Ambition: Nurse</p>
+          <p class="bio">Angel is a student at Russell Academy. She is the firstborn in her family. She wants to be a nurse when she is older.</p>
+          <p class="cost">Sponsoring Angel costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-angel-njeri.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="bright imani">
+        <a class="photo-link" href="images/needs-bright-imani.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-bright-imani.jpg" alt="Photo of Bright Imani" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Bright Imani</h3>
+          <p class="meta">Grade: 1st &middot; Ambition: Teacher</p>
+          <p class="bio">Bright wants to be a teacher when he is older. Right now he is studying at Russell Academy.</p>
+          <p class="cost">Sponsoring Bright costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-bright-imani.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="darrel owen">
+        <a class="photo-link" href="images/needs-darrel-owen.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-darrel-owen.jpg" alt="Photo of Darrel Owen" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Darrel Owen</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: August 26th, 2020 &middot; Ambition: Policeman</p>
+          <p class="bio">Darell is a first grader at Russell Academy. He wants to be a policeman when he is older.</p>
+          <p class="cost">Sponsoring Brian costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-darrel-owen.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="devid ny">
+        <a class="photo-link" href="images/needs-devid-ny.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-devid-ny.jpg" alt="Photo of Devid Ny" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Devid Ny</h3>
+          <p class="meta">Grade: 7th &middot; Birthday: January 27th, 2012 &middot; Ambition: Policeman</p>
+          <p class="bio">Hello! My name is Devid Ny. I live in a village near Phnom Penh. I live with my parents and brothers. I have 2 brothers. In my free time, I like playing football and fishing. And purple is my favorite color because it looks so beautiful. I always do house chores and take care of my brothers because I don’t want my mom to be very tired after her day. I really love my parents so much because they gave birth to me and my brother. And they love us too!!</p>
+          <p class="cost">Sponsoring Devid costs $80 a month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-devid-ny.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="emmanuela okul">
+        <a class="photo-link" href="images/needs-emmanuela-okul.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-emmanuela-okul.jpg" alt="Photo of Emmanuela Okul" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Emmanuela Okul</h3>
+          <p class="meta">Grade: 2 &middot; Birthday: December 25th, 2019 &middot; Ambition: Policewoman</p>
+          <p class="bio">Emmanuela is a Pre-Primary student at Russell Academy. She wants to be a policewoman when she grows up.</p>
+          <p class="cost">Sponsoring Emmanuela costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-emmanuela-okul.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="gianna wanjiru">
+        <a class="photo-link" href="images/needs-gianna-wanjiru.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-gianna-wanjiru.jpg" alt="Photo of Gianna Wanjiru" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Gianna Wanjiru</h3>
+          <p class="meta">Grade: 3rd &middot; Birthday: December 22nd, 2016 &middot; Ambition: Reporter</p>
+          <p class="bio">Gianna is a third grader at Russell Academy. She wants to be a reporter when she is older.</p>
+          <p class="cost">Sponsoring Gianna costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-gianna-wanjiru.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="gift misingu">
+        <a class="photo-link" href="images/needs-gift-misingu.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-gift-misingu.jpg" alt="Photo of Gift Misingu" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Gift Misingu</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: October 5th, 2019 &middot; Ambition: New Anchor</p>
+          <p class="bio">Gift is a Pre-Primary second grader at Russell Academy. She is the second born of three children. She wants to be a news anchor when she is older.</p>
+          <p class="cost">Sponsoring Gift costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-gift-misingu.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="heng jonathan">
+        <a class="photo-link" href="images/needs-heng-jonathan.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-heng-jonathan.jpg" alt="Photo of Heng Jonathan" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Heng Jonathan</h3>
+          <p class="meta">Grade: First Year University &middot; Birthday: April 4th 2009 &middot; Ambition: Professional Finance and Banking</p>
+          <p class="bio">Hello everyone! My name is Heng Jonathan. I am 17 years old. I live in the Kandal province with my parent and my two youngest siblings. My dad work as a pastor at Saang church and My Mom work as assistant’s pastor. My favorite color green. My favorite subject is finance and banking I know a little English. In my free time, I like listening to music and research somethings new and play sports. In the future I want to be an accounting and Finance. May God Bless You!</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-heng-jonathan.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="ivy samba kimani">
+        <a class="photo-link" href="images/needs-ivy-samba.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-ivy-samba.jpg" alt="Photo of Ivy Samba Kimani" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Ivy Samba Kimani</h3>
+          <p class="meta">Grade: 3rd &middot; Birthday: May 9th, 2017 &middot; Ambition: Scientist</p>
+          <p class="bio">Ivy is a student at Russell Academy. She wants to be a scientist when she is older.</p>
+          <p class="cost">Sponsoring Ivy costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-ivy-samba.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="jascinta syombua mutuku">
+        <a class="photo-link" href="images/needs-jascinta-syombua.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-jascinta-syombua.jpg" alt="Photo of Jascinta Syombua Mutuku" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Jascinta Syombua Mutuku</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: March 13th, 2019 &middot; Ambition: Teacher</p>
+          <p class="bio">Jascinta is a second grader at Russell Academy. She wants to be a teacher when she is older.</p>
+          <p class="cost">Sponsoring Jascinta costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-jascinta-syombua.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="juniour musyoki">
+        <a class="photo-link" href="images/needs-juniour-musyoki.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-juniour-musyoki.jpg" alt="Photo of Juniour Musyoki" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Juniour Musyoki</h3>
+          <p class="meta">Grade: 3rd &middot; Birthday: May 16th, 2013 &middot; Ambition: Pharmacist</p>
+          <p class="bio">Juniour is a third grader at Russell Academy. He wants to be a pharmacist in the future.</p>
+          <p class="cost">Sponsoring Juniour costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-juniour-musyoki.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="karona kem">
+        <a class="photo-link" href="images/needs-karona-kem.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-karona-kem.jpg" alt="Photo of Karona Kem" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Karona Kem</h3>
+          <p class="meta">Grade: 5th &middot; Birthday: March 6th, 2013 &middot; Ambition: Teacher</p>
+          <p class="bio">I live in a village outside of Phnom Penh with my mom, dad, and grandpa. My favorite colors are blue and purple and my favorite subjects are math and Khmer. I like to draw, paint and read. When I grow up I want to be a teacher. I want to go to Beltei because it gives me knowledge.</p>
+          <p class="cost">Sponsoring Karona costs $80 a month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-karona-kem.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="khan serey mongkul">
+        <a class="photo-link" href="images/needs-khan-serey-mongkul.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-khan-serey-mongkul.jpg" alt="Photo of Khan Serey Mongkul" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Khan Serey Mongkul</h3>
+          <p class="meta">Grade: 6th &middot; Birthday: October 1, 2014</p>
+          <p class="bio">Hello, my name is Khan Serey Mongkul! I am in 5th grade, my favorite colors are black and yellow. My favorite school subjects are Khmer and math. I like to play football, do homework, ride a bike, help with household chores. I live with my older sister and my mom in a small house near Phnom Penh. My sister is in university and my mom works hard to support us. My family enjoys attending Sunday services at Way of Hope church, your sponsorship would allow me to study at Beltei International School.</p>
+          <p class="cost">Sponsoring Khan costs $80 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-khan-serey-mongkul.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="khan sereyrothana">
+        <a class="photo-link" href="images/needs-khan-sereyrothana.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-khan-sereyrothana.jpg" alt="Photo of Khan Sereyrothana" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Khan Sereyrothana</h3>
+          <p class="meta">Grade: 1st year University &middot; Birthday: October 7th, 2007 &middot; Ambition: Teacher</p>
+          <p class="bio">I live with my Mother and brother in Phnom Penn. I want to go to Beltei International University to study teaching. My mother works alone to support our family. She has to cover all of our daily expenses, including: food, water, electricity, and the education costs for both my brother and me. Because of our financial situation, it is very difficult for my mother to pay for my university education. I am committed to studying hard and making the most of every opportunity I receive. Any support would greatly help me continue my education and work toward a better future. Please pray for my education, that God will provide the financial support I need to continue my studies. Please also pray for my family, especially for my mother, that God will give her strength, good health, and His daily provision.</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-khan-sereyrothana.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="khuon kita">
+        <a class="photo-link" href="images/needs-khuon-kita.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-khuon-kita.jpg" alt="Photo of Khuon Kita" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Khuon Kita</h3>
+          <p class="meta">Grade: First Year University &middot; Birthday: February 22nd 2003 &middot; Ambition: Web Developer</p>
+          <p class="bio">Hello everyone! My name is Khuon Nita. I am 23 years old. I live in the Kandal province with my parent and my two youngest brothers. My dad work as a farmer and My Mom work as farmer. My favorite color blue. My favorite subject is information Technology and I know a little English. In my free time, I like listening to music and research somethings new. In the future I want to be a web developer. May God Bless You!</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-khuon-kita.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="leang ly monypong">
+        <a class="photo-link" href="images/needs-leang-ly-monypong.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-leang-ly-monypong.jpg" alt="Photo of Leang Ly MonyPong" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Leang Ly MonyPong</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: July 19th, 2020 &middot; Ambition: Dentist</p>
+          <p class="bio">Hello, My name is Leang Ly MonyPong! I am in 1st grade, my favorite color is blue. My favorite subject is math. I would like to be a dentist when I am older. I have two sisters. We live with my grandparents, aunt and cousins in Phnom Penh. Only my mom and aunt work, they make just enough to support us. We attend Sunday services at Way of Hope church, your sponsorship would allow me to study at Beltei International School.</p>
+          <p class="cost">Sponsoring Leang costs $80 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-leang-ly-monypong.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="leenel wanjiru">
+        <a class="photo-link" href="images/needs-leenel-wanjiru.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-leenel-wanjiru.jpg" alt="Photo of Leenel Wanjiru" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Leenel Wanjiru</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: June 20th, 2019 &middot; Ambition: Banker</p>
+          <p class="bio">Leenel is a second grader at Russell Academy. She wants to be a banker when she is older.</p>
+          <p class="cost">Sponsoring Leenel Wanjiru costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-leenel-wanjiru.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="lemuel wambeca">
+        <a class="photo-link" href="images/needs-lemuel-joseph.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-lemuel-joseph.jpg" alt="Photo of Lemuel Wambeca" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Lemuel Wambeca</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: October 3rd, 2019</p>
+          <p class="bio">Ambitition: Pilot Lemuel is a Pre-Primary second grader at Russell Academy. He wants to be a pilot when he is older.</p>
+          <p class="cost">Sponsoring Lemuel costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-lemuel-joseph.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="linet mutheu">
+        <a class="photo-link" href="images/needs-linet-mutheu.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-linet-mutheu.jpg" alt="Photo of Linet Mutheu" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Linet Mutheu</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: February 4th, 2015 &middot; Ambition: Dentist</p>
+          <p class="bio">Linet is a student at Russell Academy. She wants to be a dentist when she grows up.</p>
+          <p class="cost">Sponsoring Linet costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-linet-mutheu.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="monicah munyiva mwaura">
+        <a class="photo-link" href="images/needs-monicah-munyiva.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-monicah-munyiva.jpg" alt="Photo of Monicah Munyiva Mwaura" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Monicah Munyiva Mwaura</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: November 3rd, 2017 &middot; Ambition: Teacher</p>
+          <p class="bio">Monicah is a Pre-Primary second grader at Russell Academy. She wants to be a teacher when she is older.</p>
+          <p class="cost">Sponsoring Monicah costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-monicah-munyiva.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="natasha waithera">
+        <a class="photo-link" href="images/needs-natasha-waithera.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-natasha-waithera.jpg" alt="Photo of Natasha Waithera" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Natasha Waithera</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: March 10th, 2020 &middot; Ambition: Teacher</p>
+          <p class="bio">Natasha is a first grader at Russell Academy. She wants to be a teacher when she is older.</p>
+          <p class="cost">Sponsoring Natasha costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-natasha-waithera.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="oeun srey nith">
+        <a class="photo-link" href="images/needs-oeun-srey-nith.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-oeun-srey-nith.jpg" alt="Photo of Oeun Srey Nith" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Oeun Srey Nith</h3>
+          <p class="meta">Grade: Fourth year University &middot; Birthday: November 15th 2004 &middot; Ambition: Accounting</p>
+          <p class="bio">Hello everyone! My name is Oeun Srey Nith. I am 22 years old. I live in the Kandal province with my parent and my youngest brother. My dad work as a farmer and My Mom work as a farmer. My favorite color red. My favorite subject is Accounting and I know a little English. In my free time, I like listening to music. In the future I want to be an accountant. Thank you so much for sponsoring me and for supporting my school fee. May God Bless You!</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-oeun-srey-nith.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="prince ngumbau">
+        <a class="photo-link" href="images/needs-prince-ngumbau.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-prince-ngumbau.jpg" alt="Photo of Prince Ngumbau" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Prince Ngumbau</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: June 5th, 2020 &middot; Ambition: Engineer</p>
+          <p class="bio">Prince is a third grader at Russell Academy. He wants to be an engineer when he is older.</p>
+          <p class="cost">Sponsoring Prince costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-prince-ngumbau.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="ruel wambeca">
+        <a class="photo-link" href="images/needs-reuel-wambeca.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-reuel-wambeca.jpg" alt="Photo of Ruel Wambeca" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Ruel Wambeca</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: September 9th, 2019 &middot; Ambition: Policeman</p>
+          <p class="bio">Ruel is a Pre-Primary second grader at Russell Academy. He wants to be a policeman when he grows up.</p>
+          <p class="cost">Sponsoring Ruel costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-reuel-wambeca.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="sek not pisey">
+        <a class="photo-link" href="images/needs-sek-not-pisey.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-sek-not-pisey.jpg" alt="Photo of Sek Not Pisey" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Sek Not Pisey</h3>
+          <p class="meta">Grade: First Year University &middot; Birthday: November 17th 2009 &middot; Ambition: Administrative</p>
+          <p class="bio">Management Specialist. Hello everyone! My name is Sek Not Pisey. I am 18 years old. I live in the Kandal province with my parents and my two oldest brothers. My dad works as a farmer and My Mom is housewife. My favorite color is yellow. My favorite subject is English and I know a little English. In my free time, I like listening to music and research somethings new and cooking food. In the future I want to be a admin management. May God Bless You!</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-sek-not-pisey.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="seyha souen">
+        <a class="photo-link" href="images/needs-seyha-souen.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-seyha-souen.jpg" alt="Photo of Seyha Souen" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Seyha Souen</h3>
+          <p class="meta">Grade: 4th &middot; Birthday: August 24, 2012 &middot; Ambition: Policeman</p>
+          <p class="bio">Hello, my name is Seyha. I have 2 brothers. I am the second child. And I am a football player. I like to eat sandwich and drink water. Every Sunday I always play football with my friends. I like to read books in my free time. I live with my dad and my oldest brother. And my youngest brother lives with my grandma at hometown, outside the city.</p>
+          <p class="cost">Sponsoring Seyha costs $80 a month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-seyha-souen.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="souen prathna">
+        <a class="photo-link" href="images/needs-souen-prathna.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-souen-prathna.jpg" alt="Photo of Souen Prathna" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Souen Prathna</h3>
+          <p class="meta">Grade: Second year University &middot; Birthday: January 8th 2007 &middot; Ambition: Professional Finance and</p>
+          <p class="bio">Banking. My name is Prathna soeun. I am a Management student at Norton University. I am a responsible, hardworking, and motivated person who enjoys learning new things and improving my skills. I believe that education is the key to building a better future, so I always do my best in my studies. I am applying for this scholarship because it will help me continue my education as a second-year student and reduce my family’s financial burden. It will also motivate me to work harder and achieve my academic and career goals. In the future, I hope to become a successful professional who can contribute to my community and make my family proud. Thank you very much May God Bless You!!</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-souen-prathna.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="stephanie khanungu">
+        <a class="photo-link" href="images/needs-stephanie-khanungu.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-stephanie-khanungu.jpg" alt="Photo of Stephanie Khanungu" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Stephanie Khanungu</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: October 5th, 2018 &middot; Ambition: Doctor</p>
+          <p class="bio">Stephanie is a first grader at Russell Academy. She wants to be a doctor when she grows up.</p>
+          <p class="cost">Sponsoring Stephanie costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-stephanie-khanungu.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="tabby kemunto">
+        <a class="photo-link" href="images/needs-tabitha-kemunto.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-tabitha-kemunto.jpg" alt="Photo of Tabby Kemunto" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Tabby Kemunto</h3>
+          <p class="meta">Grade: 3rd &middot; Birthday: September 12th, 2017 &middot; Ambition: Entrepreneur</p>
+          <p class="bio">Tabby is a third grader at Russell Academy. She wants to be an entrepreneur when she is older.</p>
+          <p class="cost">Sponsoring Tabby costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-tabitha-kemunto.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="tasha wanjiru">
+        <a class="photo-link" href="images/needs-tasha-wanjiru.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-tasha-wanjiru.jpg" alt="Photo of Tasha Wanjiru" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Tasha Wanjiru</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: March 25th, 2019 &middot; Ambition: Nurse</p>
+          <p class="bio">Tasha is a first grader at Russell Academy. She wants to be a nurse when she is older.</p>
+          <p class="cost">Sponsoring Tasha costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-tasha-wanjiru.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="thilong ros">
+        <a class="photo-link" href="images/needs-thilong-ros.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-thilong-ros.jpg" alt="Photo of Thilong Ros" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Thilong Ros</h3>
+          <p class="meta">Grade: 5th &middot; Birthday: June 13, 2012</p>
+          <p class="bio">I am in the 5th grade and live in a village outside the city of Phnom Penh. My favorite color is blue, and I like to study and play soccer. I enjoy going to Sony and Kim’s classes to study math and Khmer language and to play with my friends. I have 1 brother and 1 sister. I am the oldest. And I am a student and football player. I like to eat rice so much. Every Sunday I always go to church with my friends. I always study really hard and listen to my teachers. I want to be a soccer player when I grow up. I live with my grandma, my aunt, uncle, and my brother. My grandma and my aunt are poor too. It is really hard for them to support my studies and pay for food. Your sponsorship would allow me to study at Beltei School and get an education.</p>
+          <p class="cost">Sponsoring Long costs $80 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/needs-thilong-ros.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="thoeun rafael">
+        <a class="photo-link" href="images/needs-thoeun-rafael.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-thoeun-rafael.jpg" alt="Photo of Thoeun Rafael" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Thoeun Rafael</h3>
+          <p class="meta">Grade: First Semester University &middot; Birthday: August 8th 2008 &middot; Ambition: Information Security</p>
+          <p class="bio">Hello everyone! My name is Thoeun Rafael. I am 18 Hello everyone! My name is Thoeun Rafael. I am years old. I live in the Kandal province with my 18 years old. I live in the Kandal province with parent and my two youngest brothers. My dad my parent and my two youngest brothers. My work as a pastor at River of Life church and My dad work as a pastor at River of Life church and Mom work as assistant’s pastor. My favorite color My Mom work as assistant’s pastor. My favorite red. My favorite subject is English and I know a color red. My favorite subject is English and I little English. In my free time, I like listening to know a little English. In my free time, I like music and research somethings new and play listening to music and research somethings new sports. In the future I want to be a professional and play sports. In the future I want to be a information security Technology because I want professional information security Technology to do information Technology work. Thank you so because I want to do information Technology much for sponsoring me and for supporting my work. Thank you so much for sponsoring me and school fee. for supporting my school fee. May You! MayGod God Bless Bless You!</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-thoeun-rafael.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="venessa mungere">
+        <a class="photo-link" href="images/needs-vanessa-mungere.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-vanessa-mungere.jpg" alt="Photo of Venessa Mungere" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Venessa Mungere</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: August 26th, 2020 &middot; Ambition: Doctor</p>
+          <p class="bio">Venessa is a Pre-Primary first grader at Russell Academy. She wants to be a doctor in the future. Sponsoring Venessa Costs $65 per month.</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-vanessa-mungere.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="wilson wachira">
+        <a class="photo-link" href="images/needs-wilson-wachira.jpg" target="_blank" rel="noopener">
+          <img src="images/needs-wilson-wachira.jpg" alt="Photo of Wilson Wachira" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Wilson Wachira</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: August 14th, 2017 &middot; Ambition: Football</p>
+          <p class="bio">Wilson is a second grader at Russell Academy. He wants to be a football player when he is older.</p>
+          
+          <p class="link-row"><a class="img-url" href="images/needs-wilson-wachira.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="group" id="sponsored">
+    <h2>Already Sponsored</h2>
+    <div class="grid">
+      <article class="card" data-name="faith wanja mwangi">
+        <a class="photo-link" href="images/sponsored-faith-wanja.jpg" target="_blank" rel="noopener">
+          <img src="images/sponsored-faith-wanja.jpg" alt="Photo of Faith Wanja Mwangi" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Faith Wanja Mwangi</h3>
+          <p class="meta">Grade: 2nd &middot; Birthday: April 14th, 2020 &middot; Ambition: Doctor</p>
+          <p class="bio">Faith is a Pre-Primary second grader at Russell Academy. She is the second of three children. She wants to be a doctor when she grows up.</p>
+          <p class="cost">Sponsoring Faith costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/sponsored-faith-wanja.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="luana ruth">
+        <a class="photo-link" href="images/sponsored-luana-ruth.jpg" target="_blank" rel="noopener">
+          <img src="images/sponsored-luana-ruth.jpg" alt="Photo of Luana Ruth" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Luana Ruth</h3>
+          <p class="meta">Grade: 1st &middot; Birthday: December 13th, 2020 &middot; Ambition: Dentist</p>
+          <p class="bio">Luana is a Pre-Primary first grader at Russell Academy. She wants to become a dentist.</p>
+          <p class="cost">Sponsoring Luana costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/sponsored-luana-ruth.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="shantel akinyi">
+        <a class="photo-link" href="images/sponsored-shantel-akinyi.jpg" target="_blank" rel="noopener">
+          <img src="images/sponsored-shantel-akinyi.jpg" alt="Photo of Shantel Akinyi" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Shantel Akinyi</h3>
+          <p class="meta">Grade: 4th &middot; Birthday: November 5th, 2014 &middot; Ambition: Doctor</p>
+          <p class="bio">Shanel is a fourth grader at Russell Academy. She wants to be a doctor when she is older.</p>
+          <p class="cost">Sponsoring Shantel costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/sponsored-shantel-akinyi.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="sharline mumo">
+        <a class="photo-link" href="images/sponsored-shirleen-mumo.jpg" target="_blank" rel="noopener">
+          <img src="images/sponsored-shirleen-mumo.jpg" alt="Photo of Sharline Mumo" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Sharline Mumo</h3>
+          <p class="meta">Grade: Playgroup &middot; Birthday: April 15th, 2022 &middot; Ambition: Teacher</p>
+          <p class="bio">Sharline is a member of Russell Academy&#x27;s playgroup. She wants to be a teacher when she is older.</p>
+          <p class="cost">Sponsoring Sharline costs $65 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/sponsored-shirleen-mumo.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card" data-name="sreylis chen">
+        <a class="photo-link" href="images/sponsored-sreylis-chen.jpg" target="_blank" rel="noopener">
+          <img src="images/sponsored-sreylis-chen.jpg" alt="Photo of Sreylis Chen" loading="lazy">
+        </a>
+        <div class="card-body">
+          <h3>Sreylis Chen</h3>
+          <p class="meta">Grade: 11th &middot; Birthday: June 13th, 2008 &middot; Ambition: Teacher</p>
+          <p class="bio">I live outside of Phnom Penh with my parents, grandparents, sister, and uncle. My favorite colors are blue and purple. My favorite subjects are Khmer, history, and English. I like to sing, dance, and study. I want to be a teacher.</p>
+          <p class="cost">Sponsoring Sreylish costs $80 per month.</p>
+          <p class="link-row"><a class="img-url" href="images/sponsored-sreylis-chen.jpg" target="_blank" rel="noopener">Direct photo URL &rarr;</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>
+  Rabbit Creek Community Church &middot; Sponsorship directory generated for internal use by Murrow Media.<br>
+  Machine-readable data for every child (name, grade, birthday, ambition, bio, cost, photo URL) is available at <code class="api">data.json</code> in this same folder.
+</footer>
+<script>
+  const buttons = document.querySelectorAll('nav.tabs button');
+  const groups = document.querySelectorAll('section.group');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.remove('active'));
+    groups.forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById(b.dataset.target).classList.add('active');
+  }));
+  document.getElementById('search').addEventListener('input', (e) => {
+    const q = e.target.value.toLowerCase();
+    document.querySelectorAll('.card').forEach(c => {
+      c.style.display = c.dataset.name.includes(q) ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>
